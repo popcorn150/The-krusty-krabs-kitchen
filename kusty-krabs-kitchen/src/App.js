@@ -2,6 +2,10 @@ import { useState } from 'react';
 import './App.css';
 import Card from './Components/Card/Card';
 import Cart from './Components/Cart/Cart';
+import Home from './images/Home.png';
+import Friends from './images/Friends.png';
+import Tasks from './images/Tasks.png';
+import Wallet from './images/Wallet.png';
 const { getData } = require("./db/db");
 
 const foods = getData();
@@ -61,6 +65,25 @@ function App() {
         {foods.map((food) => {
           return <Card food={food} key={food.id} onAdd={onAdd} onRemove={onRemove} />;
         })}
+      </div>
+
+      <div className='footer__container'>
+        <div className='footer__content'>
+          <img className='footer__img' src={Home} alt="Home page" />
+          <p className='footer__text'>Home</p>
+        </div>
+        <div className='footer__contentII'>
+          <img className='footer__img' src={Tasks} alt="Home page" />
+          <p className='footer__text'>Earn</p>
+        </div>
+        <div className='footer__contentII'>
+          <img className='footer__img' src={Friends} alt="Home page" />
+          <p className='footer__text'>Invite</p>
+        </div>
+        <div className='footer__contentII'>
+          <img className='wallet__img' src={Wallet} alt="Home page" />
+          <p className='footer__text'>Wallet</p>
+        </div>
       </div>
 
     </>
