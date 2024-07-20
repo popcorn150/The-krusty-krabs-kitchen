@@ -16,8 +16,8 @@ function Cart({ cartItems }) {
     return (
         <div className='cart__container'>
             {cartItems.length === 0 ? "" : ""}
-            <br /> <span className=''>Total Coin Earned: ${totalPrice.toFixed(2)}</span>
-            <Button className='cart__btn' title={`${cartItems.length === 0 ? "Order !" : "Checkout"} `}
+            <br /> <span className='cart__txt'>Total Coin Earned: ${totalPrice.toFixed(2)}</span>
+            <Button className='cart__btn' title={`${cartItems.length === 0 ? "Place Order !" : "Checkout"} `}
                 type={"checkout"}
                 disabled={cartItems.length === 0 ? true : false}
             />

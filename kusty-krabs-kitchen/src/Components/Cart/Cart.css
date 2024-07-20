@@ -5,3 +5,9 @@
     margin-top: 12px;
     margin: 5px 15px;
 }
+
+@media (min-width: 320px) {
+    .cart__txt {
+        font-size: 0.9rem;
+    }
+}
