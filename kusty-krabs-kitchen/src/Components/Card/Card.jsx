@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { React, useState } from 'react'
 import "./Card.css"
 import Button from '../Button/Button';
 
@@ -40,4 +40,4 @@ function Card({ food, onAdd, onRemove }) {
     )
 }
 
-export default Card
+export default Card;

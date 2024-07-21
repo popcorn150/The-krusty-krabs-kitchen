@@ -1,0 +1,16 @@
+.krabbyCoin {
+    display: flex;
+    margin: 3px auto;
+    width: 13rem;
+    height: 15rem;
+}
+
+.main__txt {
+    text-align: center;
+    margin-top: -2rem;
+}
+
+.sub__txt {
+    margin: 0 1rem;
+}
+

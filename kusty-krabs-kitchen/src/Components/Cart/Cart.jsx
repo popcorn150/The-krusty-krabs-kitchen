@@ -25,4 +25,4 @@ function Cart({ cartItems }) {
     );
 }
 
-export default Cart
+export default Cart;
