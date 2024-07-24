@@ -1,0 +1,48 @@
+.task__style {
+    width: 80px;
+    height: 80px;
+    padding: 2px;
+}
+
+.task__container {
+    margin: 0 auto;
+    display: flex;
+    align-items: start;
+    align-self: center;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y)));
+    --tw-translate-x: 50%;
+    width: calc(100% - 2rem
+            /* 32px */
+        );
+    max-width: 30rem;
+    background-color: rgb(39, 42, 47, 1);
+    z-index: 50;
+    border-radius: 1rem;
+    font-size: 1rem;
+    line-height: 1rem;
+    margin-top: 15px;
+}
+
+.task__contents {
+    display: flex;
+    color: whitesmoke;
+    padding: 0.3rem;
+}
+
+.task__contents h3 {
+    font-size: 1rem;
+    padding-left: 0.6rem;
+    padding-top: 0.3rem;
+}
+
+.task__contents h4 {
+    position: absolute;
+    left: 12rem;
+    top: 21.9rem;
+}
+
+@media (max-width: 480px) {
+    .task__contents h4 {
+        left: 7rem;
+    }
+}
