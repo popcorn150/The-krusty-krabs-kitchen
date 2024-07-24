@@ -27,6 +27,12 @@ const svgIcon2 = `<svg width="70px" height="70px" fill="none" stroke="#1c1f24" v
   <path d="m10 7 5 5-5 5" stroke="#85827d" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"></path>
 </svg>`;
 
+const task1 = "Invite Bonus";
+const task2 = "do another stuff";
+
+const subTask1 = "Earn up to 100,000 when you invite your friend";
+const subTask2 = "another reason to do stuff";
+
 
 export default function Earn() {
 
@@ -42,38 +48,63 @@ export default function Earn() {
                 <use id="img1" href="#img1" x="0" y="0" />
             </svg>
             <h1 className='main__txt'>Earn more krabby coins</h1>
-            <h4 className='sub__txt'>Kusty Krabs YT Channel</h4>
             <Tasks
                 svgIcon1={svgIcon1}
-                title={"Prime broker beware: Binance cracks down"}
-                subtitle={"100,000"}
+                title={task1}
+                subtitle={subTask1}
+                svgIcon2={svgIcon2}
+            />
+            <h4 className='sub__txt'>Krabby Socials</h4>
+            <Tasks
+                svgIcon1={svgIcon1}
+                title={task2}
+                subtitle={subTask2}
                 svgIcon2={svgIcon2}
             />
             <Tasks
                 svgIcon1={svgIcon1}
-                title={"Prime broker beware: Binance cracks down"}
-                subtitle={"100,000"}
+                title={task2}
+                subtitle={subTask2}
                 svgIcon2={svgIcon2}
             />
             <Tasks
                 svgIcon1={svgIcon1}
-                title={"Prime broker beware: Binance cracks down"}
-                subtitle={"100,000"}
+                title={task2}
+                subtitle={subTask2}
+                svgIcon2={svgIcon2}
+            />
+            <h4 className='sub__txt'>Extra Tasks</h4>
+            <Tasks
+                svgIcon1={svgIcon1}
+                title={task2}
+                subtitle={subTask2}
                 svgIcon2={svgIcon2}
             />
             <Tasks
                 svgIcon1={svgIcon1}
-                title={"Prime broker beware: Binance cracks down"}
-                subtitle={"100,000"}
+                title={task2}
+                subtitle={subTask2}
                 svgIcon2={svgIcon2}
             />
             <Tasks
                 svgIcon1={svgIcon1}
-                title={"Prime broker beware: Binance cracks down"}
-                subtitle={"100,000"}
+                title={task2}
+                subtitle={subTask2}
                 svgIcon2={svgIcon2}
             />
-            <h4 className='sub__txt'>List of krabby tasks</h4>
+            <Tasks
+                svgIcon1={svgIcon1}
+                title={task2}
+                subtitle={subTask2}
+                svgIcon2={svgIcon2}
+            />
+            <Tasks
+                svgIcon1={svgIcon1}
+                title={task2}
+                subtitle={subTask2}
+                svgIcon2={svgIcon2}
+            />
+
             <div className='footer__container'>
 
                 <div className='footer__contentII'>

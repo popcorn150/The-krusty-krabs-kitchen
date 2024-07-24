@@ -51,6 +51,8 @@ body {
 }
 
 .footer__container {
+  bottom: 2rem;
+  position: fixed;
   margin: 0 auto;
   display: flex;
   align-items: center;
