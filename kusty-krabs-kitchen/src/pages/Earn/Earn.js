@@ -12,7 +12,7 @@ const svgIcon1 = `
     <title>youtube [#168]</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fillRule="evenodd">
       <g id="Dribbble-Light-Preview" transform="translate(-300.000000, -7442.000000)" fill="#FF0000">
         <g id="icons" transform="translate(56.000000, 160.000000)">
           <path d="M251.988432,7291.58588 L251.988432,7285.97425 C253.980638,7286.91168 255.523602,7287.8172 257.348463,7288.79353 C255.843351,7289.62824 253.980638,7290.56468 251.988432,7291.58588 M263.090998,7283.18289 C262.747343,7282.73013 262.161634,7282.37809 261.538073,7282.26141 C259.705243,7281.91336 248.270974,7281.91237 246.439141,7282.26141 C245.939097,7282.35515 245.493839,7282.58153 245.111335,7282.93357 C243.49964,7284.42947 244.004664,7292.45151 244.393145,7293.75096 C244.556505,7294.31342 244.767679,7294.71931 245.033639,7294.98558 C245.376298,7295.33761 245.845463,7295.57995 246.384355,7295.68865 C247.893451,7296.0008 255.668037,7296.17532 261.506198,7295.73552 C262.044094,7295.64178 262.520231,7295.39147 262.895762,7295.02447 C264.385932,7293.53455 264.28433,7285.06174 263.090998,7283.18289" id="youtube-[#168]"> </path>
@@ -23,15 +23,11 @@ const svgIcon1 = `
 </svg>
 `;
 
-const svgIcon2 = `<svg width="70px" height="70px" fill="none" stroke="#1c1f24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-  <path d="m10 7 5 5-5 5" stroke="#85827d" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"></path>
+const rightArrow = `<svg width="50px" height="50px top="5px" fill="none" stroke="#1c1f24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  <path d="m10 7 5 5-5 5" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"></path>
 </svg>`;
 
-const task1 = "Invite Bonus";
-const task2 = "do another stuff";
-
-const subTask1 = "Earn up to 100,000 when you invite your friend";
-const subTask2 = "another reason to do stuff";
+const coin = `<img src="/coin.jpg" alt="coin"/>`;
 
 
 export default function Earn() {
@@ -48,62 +44,29 @@ export default function Earn() {
                 <use id="img1" href="#img1" x="0" y="0" />
             </svg>
             <h1 className='main__txt'>Earn more krabby coins</h1>
+            <h4 className='sub__txt'>Complete tasks below to earn more coin</h4>
             <Tasks
                 svgIcon1={svgIcon1}
-                title={task1}
-                subtitle={subTask1}
-                svgIcon2={svgIcon2}
+                title="Prime broker beware: Binance cracks down"
+                
+                subtitle="100,000"
+                svgIcon2={rightArrow}
             />
-            <h4 className='sub__txt'>Krabby Socials</h4>
+
+            <Tasks
+                svgIcon1={coin}
+                title="Prime broker beware: Binance cracks down"
+                subtitle="100,000"
+                svgIcon2={rightArrow}
+            />
+
             <Tasks
                 svgIcon1={svgIcon1}
-                title={task2}
-                subtitle={subTask2}
-                svgIcon2={svgIcon2}
+                title="Prime broker beware: Binance cracks down"
+                subtitle="100,000"
+                svgIcon2={rightArrow}
             />
-            <Tasks
-                svgIcon1={svgIcon1}
-                title={task2}
-                subtitle={subTask2}
-                svgIcon2={svgIcon2}
-            />
-            <Tasks
-                svgIcon1={svgIcon1}
-                title={task2}
-                subtitle={subTask2}
-                svgIcon2={svgIcon2}
-            />
-            <h4 className='sub__txt'>Extra Tasks</h4>
-            <Tasks
-                svgIcon1={svgIcon1}
-                title={task2}
-                subtitle={subTask2}
-                svgIcon2={svgIcon2}
-            />
-            <Tasks
-                svgIcon1={svgIcon1}
-                title={task2}
-                subtitle={subTask2}
-                svgIcon2={svgIcon2}
-            />
-            <Tasks
-                svgIcon1={svgIcon1}
-                title={task2}
-                subtitle={subTask2}
-                svgIcon2={svgIcon2}
-            />
-            <Tasks
-                svgIcon1={svgIcon1}
-                title={task2}
-                subtitle={subTask2}
-                svgIcon2={svgIcon2}
-            />
-            <Tasks
-                svgIcon1={svgIcon1}
-                title={task2}
-                subtitle={subTask2}
-                svgIcon2={svgIcon2}
-            />
+
 
             <div className='footer__container'>
 
@@ -143,10 +106,9 @@ export default function Earn() {
 
                 <div className='footer__contentII'>
                     <svg className='footer__svg__size' viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-
                         <g id="SVGRepo_bgCarrier" stroke-width="0" />
                         <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
-                        <g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M2 8C2 5.79086 3.79086 4 6 4H18C20.2091 4 22 5.79086 22 8V9V15V16C22 18.2091 20.2091 20 18 20H6C3.79086 20 2 18.2091 2 16V8ZM18 6C19.1046 6 20 6.89543 20 8H18C15.7909 8 14 9.79086 14 12C14 14.2091 15.7909 16 18 16H20C20 17.1046 19.1046 18 18 18H6C4.89543 18 4 17.1046 4 16V8C4 6.89543 4.89543 6 6 6H18ZM18 10H20V14H18C16.8954 14 16 13.1046 16 12C16 10.8954 16.8954 10 18 10ZM18 13C18.5523 13 19 12.5523 19 12C19 11.4477 18.5523 11 18 11C17.4477 11 17 11.4477 17 12C17 12.5523 17.4477 13 18 13Z" fill="#85827d" /> </g>
+                        <g id="SVGRepo_iconCarrier"> <path fillRule="evenodd" clipRule="evenodd" d="M2 8C2 5.79086 3.79086 4 6 4H18C20.2091 4 22 5.79086 22 8V9V15V16C22 18.2091 20.2091 20 18 20H6C3.79086 20 2 18.2091 2 16V8ZM18 6C19.1046 6 20 6.89543 20 8H18C15.7909 8 14 9.79086 14 12C14 14.2091 15.7909 16 18 16H20C20 17.1046 19.1046 18 18 18H6C4.89543 18 4 17.1046 4 16V8C4 6.89543 4.89543 6 6 6H18ZM18 10H20V14H18C16.8954 14 16 13.1046 16 12C16 10.8954 16.8954 10 18 10ZM18 13C18.5523 13 19 12.5523 19 12C19 11.4477 18.5523 11 18 11C17.4477 11 17 11.4477 17 12C17 12.5523 17.4477 13 18 13Z" fill="#85827d" /> </g>
                     </svg>
                     <p className='footer__text'>Wallet</p>
                 </div>
