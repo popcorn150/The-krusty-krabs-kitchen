@@ -2,7 +2,7 @@
     display: flex;
     margin: 3px auto;
     width: 13rem;
-    height: 15rem;
+    height: 13.3rem;
 }
 
 .main__txt {
@@ -12,6 +12,11 @@
 
 .sub__txt {
     margin: 1rem 1rem;
-    font-weight: 300;
+    font-weight: 500;
 }
 
+.task__style {
+    width: 80px;
+    height: 70px;
+    margin-right: 0.7rem;
+}
