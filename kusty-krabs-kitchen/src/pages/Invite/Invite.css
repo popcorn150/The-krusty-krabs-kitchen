@@ -1,0 +1,43 @@
+.mainTitle {
+    margin: 30px 70px;
+    padding-top: 7vh;
+}
+
+.invite__style {
+    width: 83px;
+    height: 65px;
+}
+
+.telegram__style {
+    margin-top: -5px;
+    width: 60px;
+    height: 60px;
+}
+
+.clipBoard {
+    display: flex;
+}
+
+.clipBoard__txt {
+    align-items: center;
+    background-color: white;
+    color: black;
+    padding: 2rem;
+    padding-left: 4.5rem;
+    padding-right: 4.5rem;
+    margin: 20px auto;
+    border-radius: 50px;
+    font-weight: 300;
+}
+
+.clipBoard__img {
+    margin: 2rem;
+    background-color: white;
+    border-radius: 50px;
+    padding: 0.5rem;
+}
+
+.copy__icon {
+    width: 3rem;
+    height: 3rem;
+}

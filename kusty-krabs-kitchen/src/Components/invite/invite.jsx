@@ -1,17 +1,24 @@
 import React from 'react';
+import './invite.css';
 
 
-
-function InviteCard({ svgIcon1, title, subtitle, svgIcon2 }) {
+function InviteCard({ icon1, title1, subtitle1, icon2, title2, subtitle2 }) {
     return (
-        <div className='task__container'>
-            <div className='task__contents'>
-                <div dangerouslySetInnerHTML={{ __html: svgIcon1 }} />
-                <div className='task__text'>
-                    <h3 className='task__title'>{title}</h3>
-                    <div className='task__subtitle-container'>
-                        <img src="/coin.png" alt="coin icon" className='task__icon' />
-                        <h4 className='task__subtitle'>{subtitle}</h4>
+        <div className='invite__container'>
+            <div className='invite__content'>
+                <div className='invite__section'>
+                    <div className='invite__icon' dangerouslySetInnerHTML={{ __html: icon1 }} />
+                    <div className='invite__text'>
+                        <h3 className='invite__title'>{title1}</h3>
+                        <h4 className="invite__subtitle" dangerouslySetInnerHTML={{ __html: subtitle1 }} />
+                    </div>
+                </div>
+                <hr className='invite__divider' />
+                <div className='invite__section'>
+                    <div className='invite__icon' dangerouslySetInnerHTML={{ __html: icon2 }} />
+                    <div className='invite__text'>
+                        <h3 className='invite__title'>{title2}</h3>
+                        <h4 className="invite__subtitle" dangerouslySetInnerHTML={{ __html: subtitle2 }} />
                     </div>
                 </div>
             </div>
