@@ -1,6 +1,12 @@
-.mainTitle {
+.hidden-div.visible {
     margin: 30px 70px;
-    padding-top: 7vh;
+    display: block;
+    color: black;
+}
+
+.mainTitle {
+    margin: 20px 70px;
+    padding-top: 5vh;
 }
 
 .invite__style {
@@ -14,30 +20,45 @@
     height: 60px;
 }
 
-.clipBoard {
+.invite-button-container {
     display: flex;
+    margin: 2rem 90px;
+    align-items: center;
+    gap: 10px;
 }
 
-.clipBoard__txt {
-    align-items: center;
+.invite-button {
     background-color: white;
     color: black;
-    padding: 2rem;
-    padding-left: 4.5rem;
-    padding-right: 4.5rem;
-    margin: 20px auto;
-    border-radius: 50px;
+    padding: 15px 25px;
+    border-radius: 25px;
+    font-size: 1.3rem;
     font-weight: 300;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.clipBoard__img {
-    margin: 2rem;
-    background-color: white;
-    border-radius: 50px;
-    padding: 0.5rem;
+.copy-icon {
+    background-color: #f0f0f0;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .copy__icon {
-    width: 3rem;
-    height: 3rem;
+    width: 2rem;
+    height: 2rem;
+}
+
+.hidden-div {
+    display: none;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
 }
