@@ -1,60 +1,20 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
-import InviteCard from '../../Components/invite/invite';
-import './Invite.css';
-import Tasks from '../../Components/Tasks/Tasks';
+import './Wallet.css';
+import WalletCard from '../../Components/Wallet/wallet';
 
+const walletImg = `<img src="/wallet_icon.png" alt="wallet icon" class="wallet__style"/>`
 
-
-const inviteIcon = `<img src="/coin.png" alt="invite" class="invite__style"/>`;
-const telegramIcon = `<img src="/telegramPremium.png" alt="telegram" class="telegram__style" />`;
-
-
-export default function Invite() {
-
-    const [isVisible, setIsVisible] = useState(false);
-
-    const handleCopyClick = () => {
-        setIsVisible(!isVisible);
-        setTimeout(() => {
-            setIsVisible(false);
-        }, 2000);
-    };
-
+export default function Wallet() {
     return (
         <>
-            <div className={`hidden-div ${isVisible ? 'visible' : ''}`}>
-                Invite copied.....
-            </div>
-            <img src="/inviteLogo.png" alt="Invite Image" className='krabbyCoin' />
-            <h1 className='main__txt'>Invite friends and earn</h1>
+            <img src="/wallet.png" alt="Wallet Image" className='walletIcon' />
+            <h1 className='main__txt'>Connect Wallet</h1>
+            <h3 className='p__txt'>coming soon...</h3>
 
-            <InviteCard
-                icon1={inviteIcon}
-                title1="Invite friend"
-                subtitle1="&#128176; 2,500 for you & your friend"
-                icon2={telegramIcon}
-                title2="Invite with Telegram Premium"
-                subtitle2="&#128176; 50,000 for you & your friend"
-            />
-            <div className="invite-button-container">
-                <div className="invite-button">
-                    <span>Invite Friend</span>
-                </div>
-                <div className="copy-icon" onClick={handleCopyClick}>
-                    <img src="/copy.png" alt="copyboard" className='copy__icon' />
-                </div>
-            </div>
-
-            <Tasks
-                svgIcon1={telegramIcon}
-                title="Telegram Mini-Bonus"
-                subtitle="Invite with Telegram premium to double your earning by 50%"
-            />
-            <Tasks
-                svgIcon1={telegramIcon}
-                title="Telegram Super-Bonus"
-                subtitle="Invite with Telegram premium to double your earning by 100%"
+            <WalletCard
+                svgIcon1={walletImg}
+                title="Check back later for wallet connection..."
             />
 
             <div className='footer__container'>
@@ -82,29 +42,28 @@ export default function Invite() {
                     </Link>
                 </div>
 
-                <div className='footer__content'>
-                    <svg className='footer__svg__size' fill="#85827d" viewBox="0 -64 640 640" xmlns="http://www.w3.org/2000/svg">
-                        <g id="SVGRepo_bgCarrier" stroke-width="0" />
-                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
-                        <g id="SVGRepo_iconCarrier">
-
-                            <path d="M192 256c61.9 0 112-50.1 112-112S253.9 32 192 32 80 82.1 80 144s50.1 112 112 112zm76.8 32h-8.3c-20.8 10-43.9 16-68.5 16s-47.6-6-68.5-16h-8.3C51.6 288 0 339.6 0 403.2V432c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48v-28.8c0-63.6-51.6-115.2-115.2-115.2zM480 256c53 0 96-43 96-96s-43-96-96-96-96 43-96 96 43 96 96 96zm48 32h-3.8c-13.9 4.8-28.6 8-44.2 8s-30.3-3.2-44.2-8H432c-20.4 0-39.2 5.9-55.7 15.4 24.4 26.3 39.7 61.2 39.7 99.8v38.4c0 2.2-.5 4.3-.6 6.4H592c26.5 0 48-21.5 48-48 0-61.9-50.1-112-112-112z" />
-
-                        </g>
-                    </svg>
-                    <p className='footer__text'>Invite</p>
-                </div>
-
                 <div className='footer__contentII'>
-                    <Link to='/wallet'>
-                        <svg className='footer__svg__size' viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-
+                    <Link to='/invite'>
+                        <svg className='footer__svg__size' fill="#85827d" viewBox="0 -64 640 640" xmlns="http://www.w3.org/2000/svg">
                             <g id="SVGRepo_bgCarrier" stroke-width="0" />
                             <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
-                            <g id="SVGRepo_iconCarrier"> <path fillRule="evenodd" clipRule="evenodd" d="M2 8C2 5.79086 3.79086 4 6 4H18C20.2091 4 22 5.79086 22 8V9V15V16C22 18.2091 20.2091 20 18 20H6C3.79086 20 2 18.2091 2 16V8ZM18 6C19.1046 6 20 6.89543 20 8H18C15.7909 8 14 9.79086 14 12C14 14.2091 15.7909 16 18 16H20C20 17.1046 19.1046 18 18 18H6C4.89543 18 4 17.1046 4 16V8C4 6.89543 4.89543 6 6 6H18ZM18 10H20V14H18C16.8954 14 16 13.1046 16 12C16 10.8954 16.8954 10 18 10ZM18 13C18.5523 13 19 12.5523 19 12C19 11.4477 18.5523 11 18 11C17.4477 11 17 11.4477 17 12C17 12.5523 17.4477 13 18 13Z" fill="#85827d" /> </g>
+                            <g id="SVGRepo_iconCarrier">
+
+                                <path d="M192 256c61.9 0 112-50.1 112-112S253.9 32 192 32 80 82.1 80 144s50.1 112 112 112zm76.8 32h-8.3c-20.8 10-43.9 16-68.5 16s-47.6-6-68.5-16h-8.3C51.6 288 0 339.6 0 403.2V432c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48v-28.8c0-63.6-51.6-115.2-115.2-115.2zM480 256c53 0 96-43 96-96s-43-96-96-96-96 43-96 96 43 96 96 96zm48 32h-3.8c-13.9 4.8-28.6 8-44.2 8s-30.3-3.2-44.2-8H432c-20.4 0-39.2 5.9-55.7 15.4 24.4 26.3 39.7 61.2 39.7 99.8v38.4c0 2.2-.5 4.3-.6 6.4H592c26.5 0 48-21.5 48-48 0-61.9-50.1-112-112-112z" />
+
+                            </g>
                         </svg>
-                        <p className='footer__text'>Wallet</p>
+                        <p className='footer__text'>Invite</p>
                     </Link>
+                </div>
+
+                <div className='footer__content'>
+                    <svg className='footer__svg__size' viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0" />
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
+                        <g id="SVGRepo_iconCarrier"> <path fillRule="evenodd" clipRule="evenodd" d="M2 8C2 5.79086 3.79086 4 6 4H18C20.2091 4 22 5.79086 22 8V9V15V16C22 18.2091 20.2091 20 18 20H6C3.79086 20 2 18.2091 2 16V8ZM18 6C19.1046 6 20 6.89543 20 8H18C15.7909 8 14 9.79086 14 12C14 14.2091 15.7909 16 18 16H20C20 17.1046 19.1046 18 18 18H6C4.89543 18 4 17.1046 4 16V8C4 6.89543 4.89543 6 6 6H18ZM18 10H20V14H18C16.8954 14 16 13.1046 16 12C16 10.8954 16.8954 10 18 10ZM18 13C18.5523 13 19 12.5523 19 12C19 11.4477 18.5523 11 18 11C17.4477 11 17 11.4477 17 12C17 12.5523 17.4477 13 18 13Z" fill="#85827d" /> </g>
+                    </svg>
+                    <p className='footer__text'>Wallet</p>
                 </div>
 
             </div>

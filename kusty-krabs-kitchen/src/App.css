@@ -92,6 +92,8 @@ body {
 
 .footer__text {
   margin-top: 0.25rem;
+  text-decoration: none;
+  color: #85827d;
 }
 
 @media (min-width: 480px) {

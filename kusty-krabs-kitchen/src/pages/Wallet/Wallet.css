@@ -1,0 +1,17 @@
+.walletIcon {
+    display: flex;
+    margin: 2.5rem auto;
+    width: 20rem;
+    height: 13rem;
+}
+
+.wallet__style {
+    width: 90px;
+    height: 70px;
+    margin-right: 0.7rem;
+}
+
+.p__txt {
+    text-align: center;
+    color: #d5d4d4;
+}

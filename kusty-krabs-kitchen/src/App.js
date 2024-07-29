@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import Earn from './pages/Earn/Earn';
 import Nopage from './pages/404';
 import Invite from './pages/Invite/Invite';
+import Wallet from './pages/Wallet/Wallet';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path='/home' element={<Home />} />
           <Route path='/earn' element={<Earn />} />
           <Route path='/invite' element={<Invite />} />
+          <Route path='/wallet' element={<Wallet />} />
           <Route path='*' element={<Nopage />} />
         </Routes>
       </BrowserRouter>

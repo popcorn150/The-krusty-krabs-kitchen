@@ -1,12 +1,8 @@
 .hidden-div.visible {
-    margin: 30px 70px;
     display: block;
+    margin: 30px 70px;
+    text-align: center;
     color: black;
-}
-
-.mainTitle {
-    margin: 20px 70px;
-    padding-top: 5vh;
 }
 
 .invite__style {
