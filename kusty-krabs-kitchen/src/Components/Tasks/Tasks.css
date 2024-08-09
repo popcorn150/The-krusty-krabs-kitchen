@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+
 .task__container {
     margin: 0 auto;
+    border: none;
     display: flex;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y)));
     --tw-translate-x: 50%;
@@ -8,6 +11,7 @@
         );
     max-width: 30rem;
     justify-content: space-between;
+    font-family: "Lilita One", sans-serif;
     align-items: center;
     padding: 0.6rem;
     background-color: rgb(39, 42, 47, 1);
@@ -17,25 +21,39 @@
     margin-top: 15px;
 }
 
+.task__container:active {
+    transform: scale(0.98);
+}
+
 .task__contents {
     display: flex;
     align-items: center;
     width: 100%;
 }
 
+.main__icon__style {
+    width: 80px;
+    height: 70px;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
 .task__text {
     display: flex;
     flex-direction: column;
+    padding: 0.5rem;
 }
 
-.task__title {
+.title {
     margin: 0;
     color: #ffa500;
     font-weight: 600;
+    text-align: start;
 }
 
-.task__subtitle-container {
+.task__subtitle__container {
     display: flex;
+    text-align: start;
     align-items: center;
     margin-top: 0.5rem;
 }
@@ -50,4 +68,11 @@
     margin: 0;
     margin-left: -0.5rem;
     font-weight: 200;
+}
+
+.visit__icon {
+    display: flex;
+    width: 30px;
+    height: 30px;
+    padding: 2.3rem;
 }

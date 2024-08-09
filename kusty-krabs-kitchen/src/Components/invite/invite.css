@@ -24,9 +24,9 @@
 }
 
 .invite__icon {
-    width: 40px;
-    height: 40px;
-    margin-right: 10px;
+    width: 50px;
+    height: 50px;
+    padding: 0.7rem;
 }
 
 .invite__text {
@@ -46,7 +46,7 @@
 .invite__subtitle {
     margin: 5px 0 0 0;
     font-size: 16px;
-    color: #d3d2d2;
+    color: #e5e2e2;
 }
 
 .invite__divider {

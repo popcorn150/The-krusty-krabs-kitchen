@@ -1,22 +1,28 @@
 import React from 'react';
 import './Tasks.css';
+import tasks from '../../pages/Earn/TaskData';
 
-function TaskCard({ svgIcon1, title, subtitle, svgIcon2 }) {
+function TaskCard() {
+
     return (
-        <div className='task__container'>
-            <div className='task__contents'>
-                <div dangerouslySetInnerHTML={{ __html: svgIcon1 }} />
-                <div className='task__text'>
-                    <h3 className='task__title'>{title}</h3>
-                    <div className='task__subtitle-container'>
-                        <img src="/coin.png" alt="coin icon" className='task__icon' />
-                        <h4 className='task__subtitle'>{subtitle}</h4>
+        <div>
+            {tasks.map(task => (
+                <button key={task.id} className='task__container'>
+                    <div className='task__contents'>
+                        <img src={task.mainSrc} alt={task.alt} className='main__icon__style' />
+                        <div className='task__text'>
+                            <h3 className='title'>{task.mainLabel}</h3>
+                            <div className='task__subtitle__container'>
+                                <img src="/coin.png" alt="coin icon" className='task__icon' />
+                                <p className='task__subtitle'>{task.subLabel}</p>
+                            </div>
+                        </div>
+                        <div className='visit__icon'>
+                            <img src="/Visit.png" alt="visit arrow" />
+                        </div>
                     </div>
-                </div>
-                <svg width="80px" height="80px" fill="none" stroke="#1c1f24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path d="m10 7 5 5-5 5" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"></path>
-                </svg>
-            </div>
+                </button>
+            ))}
         </div>
     )
 }
