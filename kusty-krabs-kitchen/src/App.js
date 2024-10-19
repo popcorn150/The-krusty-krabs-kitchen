@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, BrowserRouter } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 import Home from './pages/Home';
 import Earn from './pages/Earn/Earn';
@@ -10,7 +10,7 @@ import Wallet from './pages/Wallet/Wallet';
 function App() {
   return (
     <div>
-      <BrowserRouter>
+      <Router>
         <Routes>
           <Route index element={<Home />} />
           <Route path='/home' element={<Home />} />
@@ -19,7 +19,7 @@ function App() {
           <Route path='/wallet' element={<Wallet />} />
           <Route path='*' element={<Nopage />} />
         </Routes>
-      </BrowserRouter>
+      </Router>
     </div>
   );
 }
